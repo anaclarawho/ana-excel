@@ -1,60 +1,79 @@
-# 📊 Ferramenta de Projeção de Investimentos em Fundos Imobiliários (Excel)
+<div align="center">
 
-## 📌 Descrição
-Este repositório contém uma ferramenta desenvolvida em **Microsoft Excel** para **projeção de investimentos em Fundos Imobiliários (FIIs)**, elaborada como atividade acadêmica orientada pelo professor.
+# 📊 Ferramenta de Projeção de Investimentos em FIIs
 
-O projeto tem como finalidade simular cenários de investimento mensal, considerando tempo de aplicação, taxa de rendimento, patrimônio acumulado e estimativa de dividendos mensais.
+Simulador em Excel para projeção de investimentos mensais em **Fundos Imobiliários (FIIs)**  
+📈 Educação financeira • 📊 Excel • 💰 Investimentos
 
----
-
-## 🎯 Objetivo
-O objetivo desta atividade foi:
-- Compreender a lógica de projeção de investimentos em FIIs
-- Aplicar conceitos de rendimento mensal e juros compostos
-- Utilizar o Excel como ferramenta de simulação financeira
-- Organizar e apresentar informações financeiras de forma visual e compreensível
+</div>
 
 ---
 
-## 🛠️ O que foi desenvolvido
-A estrutura principal da planilha seguiu o **modelo fornecido pelo professor**, mantendo os mesmos cálculos, campos e organização funcional.
+## 📌 Sobre o Projeto
 
-Minha contribuição direta no projeto foi:
-- Personalização visual da ferramenta
-- Inserção do meu nome na planilha
-- Criação e inclusão de um **ícone em pixel art**, gerado com auxílio de **Inteligência Artificial**, representando minha identidade visual
-- Ajustes estéticos (cores, cabeçalhos e identidade gráfica), mantendo intacta a lógica original dos cálculos
+Este repositório apresenta uma **ferramenta desenvolvida em Microsoft Excel** para **projeção de investimentos em Fundos Imobiliários (FIIs)**, criada como atividade acadêmica sob orientação do professor.
 
-Essas alterações tiveram como objetivo tornar a ferramenta mais personalizada, visualmente atrativa e alinhada à minha identidade.
-
----
-
-## 📈 Funcionalidades da ferramenta
-- Definição de salário e percentual de investimento
-- Simulação de investimento mensal em FIIs
-- Projeção de patrimônio acumulado ao longo dos anos
-- Estimativa de dividendos mensais
-- Comparação de cenários (2, 5, 10, 20 e 30 anos)
-- Distribuição sugerida por tipo de FII
+A planilha permite simular cenários de investimento ao longo do tempo, considerando:
+- valor investido mensalmente  
+- taxa de rendimento  
+- patrimônio acumulado  
+- estimativa de dividendos mensais  
 
 ---
 
-## 💻 Tecnologias e ferramentas utilizadas
-- Microsoft Excel
-- Fórmulas financeiras
-- Inteligência Artificial (para geração do ícone em pixel art)
-- GitHub (documentação e organização do projeto)
+## 🎯 Objetivo da Atividade
+
+- Aplicar conceitos básicos de investimentos e juros compostos  
+- Utilizar o Excel como ferramenta de simulação financeira  
+- Desenvolver organização, clareza visual e leitura de dados  
+- Compreender projeções de curto, médio e longo prazo  
 
 ---
 
-## 🖼️ Evidências
-As imagens comparativas entre:
-- Modelo apresentado pelo professor  
-- Versão personalizada por mim  
+## 🛠️ Desenvolvimento do Projeto
 
-estão disponíveis na pasta `/images`, permitindo visualizar claramente as adaptações realizadas.
+A **estrutura funcional da planilha** (cálculos, campos e lógica financeira) foi baseada no **modelo fornecido pelo professor**, mantendo total fidelidade aos dados e fórmulas propostas.
+
+### ✨ Minhas contribuições no projeto:
+- Personalização visual da planilha  
+- Inserção do meu nome  
+- Criação de um **ícone em pixel art**, gerado com auxílio de **Inteligência Artificial**, representando minha identidade visual  
+- Ajustes estéticos (cores, cabeçalhos e identidade gráfica), sem alteração da lógica de cálculo  
+
+Essas adaptações tiveram como objetivo tornar a ferramenta mais intuitiva, atrativa e personalizada.
 
 ---
 
-## 📝 Considerações finais
-Este projeto representa uma experiência prática no uso do Excel aplicado à educação financeira, respeitando o modelo pedagógico proposto e acrescentando uma personalização visual autoral. A atividade contribuiu para o desenvolvimento da organização, atenção a detalhes e compreensão de conceitos básicos de investimentos.
+## 📈 Funcionalidades da Ferramenta
+
+✔ Definição de salário e percentual de investimento  
+✔ Simulação de investimento mensal em FIIs  
+✔ Projeção de patrimônio acumulado  
+✔ Estimativa de dividendos mensais  
+✔ Comparação de cenários (2, 5, 10, 20 e 30 anos)  
+✔ Distribuição sugerida por tipo de FII  
+
+---
+
+## 💻 Tecnologias e Ferramentas Utilizadas
+
+- 📊 Microsoft Excel  
+- 🧮 Fórmulas financeiras  
+- 🤖 Inteligência Artificial (pixel art)  
+- 🌐 GitHub (versionamento e documentação)  
+
+---
+
+## 🖼️ Evidências Visuais
+
+Na pasta **`/images`**, estão disponíveis:
+- Modelo original apresentado pelo professor  
+- Versão personalizada desenvolvida por mim  
+
+As imagens permitem visualizar claramente as adaptações realizadas.
+
+---
+
+## 📝 Considerações Finais
+
+Este projeto proporcionou uma experiência prática no uso do **Excel aplicado à educação financeira**, respeitando o modelo pedagógico proposto e acrescentando uma personalização visual autoral. A atividade contribuiu significativamente para o desenvolvimento da organização, atenção aos detalhes e compreensão de conceitos fundamentais de investimento.
