@@ -45,20 +45,29 @@ em todas as abas.
 
 🎨 PADRONIZAÇÃO VISUAL COM VBA
 
-Durante o desenvolvimento, percebi que alinhar manualmente os ícones
-em cada planilha gerava retrabalho e imprecisão.
+Durante o desenvolvimento, o professor ensinou a ajustar os ícones inserindo valores de X e Y diretamente no código e ir testando até encontrar a posição correta. Ou seja, alterar os números, executar, verificar, corrigir e repetir até alinhar.
 
-O método tradicional era testar posição por posição.
-Optei por uma abordagem mais técnica.
+Percebi que esse processo exigia várias tentativas e tomava mais tempo.
 
-Posicionei o ícone na primeira planilha exatamente onde eu queria.
-Depois, capturei as coordenadas X e Y utilizando VBA:
+Então adotei uma abordagem diferente.
+
+Primeiro, posicionei o ícone manualmente na primeira planilha exatamente onde eu queria que ele ficasse.
+
+Depois, utilizei o VBA para capturar automaticamente as coordenadas exatas daquela posição:
 
 ? Selection.ShapeRange(1).Left
 ? Selection.ShapeRange(1).Top
 
-Com os valores anotados, apliquei as mesmas coordenadas
-nas demais planilhas com o código abaixo:
+Esses comandos retornaram os valores reais de X e Y do ícone já alinhado.
+
+Com essas coordenadas anotadas, bastou copiar os valores para o código do professor e aplicar nas demais abas, garantindo que todos os ícones ficassem perfeitamente alinhados sem precisar testar posição por posição.
+
+Essa solução trouxe:
+
+✔ Precisão no alinhamento
+✔ Economia de tempo
+✔ Padronização entre abas
+✔ Processo mais inteligente de ajuste visual
 
 ------------------------------------------------------------
 Sub MoverIconeParaPosicao()
