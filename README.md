@@ -1,85 +1,66 @@
-# 📊 Planilha de Apoio à Declaração de Imposto de Renda
 
-Este repositório contém a planilha desenvolvida como projeto prático do curso, com o objetivo de facilitar a organização das informações necessárias para a declaração de Imposto de Renda.
+📊 PLANILHA DE APOIO À DECLARAÇÃO DE IMPOSTO DE RENDA
 
-A proposta foi criar uma ferramenta simples, funcional e organizada, permitindo reunir os dados ao longo do ano e reduzir erros no momento da declaração.
+Este repositório contém a planilha desenvolvida como projeto prático do curso,
+com foco em facilitar a organização das informações necessárias para a
+declaração de Imposto de Renda.
 
----
+A proposta foi construir uma ferramenta funcional, organizada e automatizada,
+capaz de reduzir erros e otimizar o processo de preparação da declaração.
 
-## 🎯 Objetivo do Projeto
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-- Organizar rendimentos  
-- Controlar despesas dedutíveis  
-- Estruturar informações por categoria  
-- Automatizar cálculos  
-- Reduzir erros no preenchimento  
-- Economizar tempo na entrega da declaração  
+🎯 OBJETIVO
 
-A planilha funciona como um sistema de organização prévia. Os dados são registrados ao longo do ano, evitando acúmulo de documentos no período da declaração.
+Criar uma planilha estruturada para:
 
----
+✔ Organizar rendimentos  
+✔ Controlar despesas dedutíveis  
+✔ Automatizar cálculos  
+✔ Centralizar informações  
+✔ Reduzir retrabalho na hora da declaração  
 
-## 🛠 Processo de Desenvolvimento
+A ideia foi transformar a planilha em um sistema de apoio anual,
+não apenas um arquivo de uso pontual.
 
-A planilha foi construída em conjunto com o professor durante o curso, seguindo etapas estruturadas:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-### 1️⃣ Estruturação das Abas
-- Separação por categorias de informação  
-- Organização lógica dos dados  
+🛠 MEU PROCESSO DE DESENVOLVIMENTO
 
-### 2️⃣ Modelagem das Tabelas
-- Criação de campos objetivos  
-- Aplicação de fórmulas automáticas  
-- Padronização de entradas  
+A planilha foi construída em conjunto com o professor durante o curso,
+seguindo um processo estruturado e orientado à prática.
 
-### 3️⃣ Validação e Organização
-- Controle de consistência de dados  
-- Redução de erros de digitação  
+Primeiro, defini a estrutura das abas, organizando as informações por categorias.
+Depois, modelei as tabelas com campos objetivos e fórmulas automáticas,
+garantindo consistência nos cálculos.
 
-### 4️⃣ Padronização Visual
-- Layout limpo  
-- Ícones organizados  
-- Interface uniforme entre abas  
+Em seguida, apliquei validação de dados para reduzir erros de digitação
+e inconsistências.
 
----
+Na etapa final, foquei na padronização visual,
+mantendo uniformidade entre ícones, imagens e elementos gráficos
+em todas as abas.
 
-## 🎨 Padronização de Ícones com VBA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Para manter todos os ícones e imagens exatamente alinhados entre as planilhas, foi utilizada automação com VBA.
+🎨 PADRONIZAÇÃO VISUAL COM VBA
 
-### Método aplicado
+Durante o desenvolvimento, percebi que alinhar manualmente os ícones
+em cada planilha gerava retrabalho e imprecisão.
 
-1. Inserir o ícone na primeira planilha  
-2. Posicionar manualmente no local desejado  
-3. Capturar as coordenadas X e Y  
-4. Aplicar automaticamente essas coordenadas nas demais planilhas  
+O método tradicional era testar posição por posição.
+Optei por uma abordagem mais técnica.
 
-Esse processo substituiu o método manual de testar posições repetidamente, tornando o trabalho mais preciso, mais rápido e mais organizado.
+Posicionei o ícone na primeira planilha exatamente onde eu queria.
+Depois, capturei as coordenadas X e Y utilizando VBA:
 
----
-
-## 📍 Como capturar as coordenadas do ícone
-
-Após posicionar o ícone manualmente:
-
-1. Selecione o ícone no Excel  
-2. Pressione `Alt + F11` para abrir o Editor VBA  
-3. Pressione `Ctrl + G` para abrir a Janela Imediata  
-4. Digite os comandos abaixo e pressione Enter  
-
-```vba
 ? Selection.ShapeRange(1).Left
 ? Selection.ShapeRange(1).Top
 
-Left retorna a posição X
+Com os valores anotados, apliquei as mesmas coordenadas
+nas demais planilhas com o código abaixo:
 
-Top retorna a posição Y
-
-Os valores são exibidos em pontos
-
-Anote esses valores para reutilizar nas demais planilhas.
-
-🔁 Código para aplicar a mesma posição nas outras planilhas
+------------------------------------------------------------
 Sub MoverIconeParaPosicao()
     Dim shp As Shape
     Dim ws As Worksheet
@@ -89,10 +70,10 @@ Sub MoverIconeParaPosicao()
     
     Set ws = ActiveSheet
     
-    nomeIconeProcurado = "Ícone 1" ' Nome exato do ícone
+    nomeIconeProcurado = "Ícone 1"
     
-    novaPosicaoX = 100 ' Substitua pelo valor de Left anotado
-    novaPosicaoY = 50  ' Substitua pelo valor de Top anotado
+    novaPosicaoX = 100
+    novaPosicaoY = 50
     
     For Each shp In ws.Shapes
         If shp.Name = nomeIconeProcurado Then
@@ -102,18 +83,28 @@ Sub MoverIconeParaPosicao()
         End If
     Next shp
 End Sub
-💻 Tecnologias Utilizadas
+------------------------------------------------------------
 
-Microsoft Excel
+Essa decisão trouxe:
 
-Fórmulas e funções financeiras
+✔ Precisão no alinhamento  
+✔ Padronização visual entre abas  
+✔ Economia de tempo  
+✔ Redução de retrabalho  
 
-Validação de dados
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-VBA para automação e padronização visual
+💻 TECNOLOGIAS UTILIZADAS
 
-🚀 Resultado Final
+• Microsoft Excel  
+• Fórmulas e funções financeiras  
+• Validação de dados  
+• VBA para automação visual  
 
-Uma planilha organizada, automatizada e visualmente uniforme, pronta para apoiar a organização das informações para a declaração de Imposto de Renda.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Este projeto representa aplicação prática do conteúdo aprendido no curso, com foco em eficiência, organização e melhoria de processo.
+🚀 RESULTADO
+
+Uma planilha organizada, automatizada e visualmente consistente,
+construída com base no conteúdo aprendido no curso
+e aprimorada com soluções técnicas aplicadas durante o desenvolvimento.
